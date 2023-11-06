@@ -1,42 +1,44 @@
 # django-production-guide
+<hr>
 
-Hi
+### Step by Step guide to deploy django application.
+<hr>
 
-## Project Structure
-```.
-├── docs
-└── src
+<!-- Project Structure Start -->
+<details> 
+<summary>Project Structure</summary>
+
 ```
-
-1) docs will contains All readme and documentation.
-2) src will contain all source code for django application
-
-### Inside src
-```
-src/
+.
 ├── manage.py
+├── README.md
 ├── requirements
 ├── simple_medium_clone
-└── venv
 ```
-1) requirements dir contains different requirements file diffrent environments
 
-### Inside requirements
+1) `simple_medium_clone` is our main django application.
+2) `requirements` dir contains diffrent requirement for diff environments.
 
-```requirements/
+#### Inside requirements
+
+```requirements
+.
 ├── base.txt
 ├── local.txt
 └── production.txt
 ```
 base.txt will contains common dependencies
 
-### How to use dependency inheritance
+#### How to use dependency inheritance
 Inside requirement file use <i>-r filename</i> to include all dependencies of <i>filename</i> into file.
 
 ```
 -r base.txt
 ```
 
-### Create gitignore file
+#### Create gitignore file
 ```npx gitignore python```
-This will generate .gitignore file for Python projects
+This will generate .gitignore file for Python projects 
+OR we can add this when creating project repo.
+</details> 
+<!-- Project Structure End -->
